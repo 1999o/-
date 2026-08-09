@@ -1,0 +1,12 @@
+{
+  "name": "تذكير - Tathkeer",
+  "short_name": "تذكير",
+  "description": "تطبيق تذكير شخصي بالمناسبات السنوية المهمة للواصلين والأحبة",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#064e3b",
+  "theme_color": "#064e3b",
+  "orientation": "portrait",
+  "lang": "ar",
+  "dir": "rtl"
+}

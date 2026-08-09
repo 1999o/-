@@ -1,0 +1,10 @@
+{
+  "name": "Remix تذكير - Tathkeer",
+  "description": "تطبيق تذكير شخصي بالمناسبات السنوية المهمة للواصلين والأحبة مع دعم الإشعارات والواتساب والدعم الكامل للغة العربية.",
+  "requestFramePermissions": [
+    "notifications"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
