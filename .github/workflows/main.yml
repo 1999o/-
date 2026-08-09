@@ -1,11 +1,10 @@
-
 name: Build Android App
 
 on:
   push:
-    branches: [ "main", "رئيسي" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "main", "رئيسي" ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -20,7 +19,6 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-        cache: gradle
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
