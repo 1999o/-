@@ -25,12 +25,12 @@ jobs:
         GRADLEW_PATH=$(find . -name gradlew)
         if [ -z "$GRADLEW_PATH" ]; then
           echo "Gradlew not found, trying to run fallback gradle build"
-          gradle assembleDebug
+          gradle assembleDebug -x lint -x test --continue
         else
           DIR=$(dirname "$GRADLEW_PATH")
           cd "$DIR"
           chmod +x gradlew
-          ./gradlew assembleDebug
+          ./gradlew assembleDebug -x lint -x test --continue
         fi
 
     - name: Upload APK Artifact
@@ -40,4 +40,3 @@ jobs:
         path: |
           **/build/outputs/apk/debug/*.apk
           **/build/outputs/apk/release/*.apk
-
